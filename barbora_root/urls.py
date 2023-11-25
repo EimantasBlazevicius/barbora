@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("home_page.urls")),
+    path('product/<int:pk>', include("single_product_page.urls"))
 ]
